@@ -109,7 +109,7 @@ function MyComponent() {
 
 ### Error boundaries
 
-다른 모듈 로드에 실패할 경우 Error Boundary를 만들고 lazy 컴포넌트를 감싸면 에러를 표시할 수 있다. _`Error boundaries`에 대한 것은 다음 스터디에서 다뤄보자!_
+다른 모듈 로드에 실패할 경우 Error Boundary를 만들고 lazy 컴포넌트를 감싸면 에러를 표시할 수 있다.
 
 ```js
 import React, { Suspense } from 'react';
@@ -131,3 +131,5 @@ const MyComponent = () => (
   </div>
 );
 ```
+
+_`Error boundaries`에 대한 자세한 내용은 다음 스터디에서 다뤄보자!_
