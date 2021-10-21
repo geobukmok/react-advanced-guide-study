@@ -8,7 +8,7 @@ const LectureDetail = () => (
                 <Link to="/">Home</Link>
             </li>
             <li>
-                <Link to="/lecture">Lecture</Link>
+                <Link to="/lectures">Lecture</Link>
             </li>
             <li>
                 <Link to="/resources">Resources</Link>
