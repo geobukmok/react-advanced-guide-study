@@ -87,5 +87,5 @@ export let REACT_FRAGMENT_TYPE = 0xeacb;
 ```
 
 아무리봐도... 못찾겠어요...!
-그럼 REACT_FRAGMENT_TYPE은 0xeacb인건가...?
+그럼 React.Fragment는 0xeacb인건가...?
 코드 디깅 해보신분들 팁좀 알려주십쇼...
