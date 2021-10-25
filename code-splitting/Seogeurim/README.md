@@ -132,7 +132,7 @@ const MyComponent = () => (
 );
 ```
 
-_`Error boundaries`에 대한 자세한 내용은 다음 스터디에서 다뤄보자!_
+_`Error boundaries`에 대한 자세한 내용은 [다음 스터디](https://github.com/geobukmok/react-advanced-guide-study/tree/main/error-boundaries/Seogeurim#%EC%A7%80%EB%82%9C-%EC%8A%A4%ED%84%B0%EB%94%94--code-splitting---error-boundary)에서 다뤄보자!_
 
 ---
 
