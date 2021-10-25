@@ -133,3 +133,10 @@ const MyComponent = () => (
 ```
 
 _`Error boundaries`에 대한 자세한 내용은 다음 스터디에서 다뤄보자!_
+
+---
+
+#### 211021 스터디 정리
+
+- [loadable](https://github.com/gregberge/loadable-components)이 더욱 유연하다고 한다. 나중에 한 번 살펴보면 좋을듯 !!
+- 18 major version 부터 React.lazy를 서버 사이드 렌더링에서도 사용 가능해질 것이라고 !! (지금은 안 됨, loadable은 가능)
