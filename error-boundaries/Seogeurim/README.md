@@ -69,3 +69,35 @@ class ErrorBoundary extends React.Component {
 - 오직 클래스 컴포넌트만이 에러 경계가 될 수 있다.
 - 대부분의 경우 에러 경계 컴포넌트를 한 번만 선언하여 애플리케이션 전체에서 활용할 것이다.
 - 에러 경계 컴포넌트 렌더링 시 오류가 발생한다면 에러는 그 위의 가장 가까운 에러 경계로 전파된다. (에러 경계의 하위 컴포넌트 트리에 존재하는 _모든 에러를_, 그리고 하위에 존재하는 _에러만을_ 포착하므로)
+
+---
+
+#### 지난 스터디 : code splitting - Error Boundary
+
+Code Splitting에 대해 공부할 때 Error Boundary에 대해 이해하지 못했던 것을 다시 보자.
+
+> _[Seogeurim/Code-Splitting#error-boundaries](https://github.com/geobukmok/react-advanced-guide-study/tree/main/code-splitting/Seogeurim#error-boundaries)_
+>
+> 다른 모듈 로드에 실패할 경우 Error Boundary를 만들고 lazy 컴포넌트를 감싸면 에러를 표시할 수 있다.
+>
+> ```js
+> import React, { Suspense } from 'react';
+> import MyErrorBoundary from './MyErrorBoundary';
+> const OtherComponent = React.lazy(() => import('./OtherComponent'));
+> const AnotherComponent = React.lazy(() => import('./AnotherComponent'));
+>
+> const MyComponent = () => (
+>   <div>
+>     <MyErrorBoundary>
+>       <Suspense fallback={<div>Loading...</div>}>
+>         <section>
+>           <OtherComponent />
+>           <AnotherComponent />
+>         </section>
+>       </Suspense>
+>     </MyErrorBoundary>
+>   </div>
+> );
+> ```
+
+`MyErrorBoundary` 컴포넌트의 에러 처리 관련 생명주기 메서드는 자식 컴포넌트를 렌더링하는 과정에서 오류가 발생했을 때 호출될 것이다. 즉 lazy 컴포넌트를 불러오는 과정에서 네트워크 장애 등의 에러가 발생하여 렌더링에 실패한다면, `Error Boundary`를 통해 에러에 대한 사용자 경험과 복구 관리를 처리할 수 있을 것이다.
