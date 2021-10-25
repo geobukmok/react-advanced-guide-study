@@ -36,7 +36,7 @@ function Toolbar() {
 // 하위 컴포넌트
 class ThemedButton extends React.Component {
   // 현재 선택된 테마 값을 읽기 위해 contextType을 지정
-  // React는 가장 가까이 있는 테마 Provider를 찾아 그 값을 사용 - dark
+  // React는 가장 가까이 있는 테마 Provider를 찾아 그 값(dark)을 사용
   static contextType = ThemeContext;
   render() {
     return <Button theme={this.context} />;
