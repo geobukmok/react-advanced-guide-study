@@ -1,2 +1,18 @@
-# react-advanced-guide-study
-repository to study react advanced guide
+# React Advanced Guide Study
+
+> Since 2021.10.18
+
+## 📘 React 고급 안내서
+
+- 영문 : https://reactjs.org/docs/accessibility.html
+- 한글 : https://ko.reactjs.org/docs/accessibility.html
+
+## 💡 스터디 기록
+
+| 주제             |               지용               |                채은                 |                 종호                  |                그림                |                 지호                  |
+| :--------------- | :------------------------------: | :---------------------------------: | :-----------------------------------: | :--------------------------------: | :-----------------------------------: |
+| Code-Splitting   |  [🔗](./code-splitting/jiyong1)  |  [🔗](./code-splitting/chaeeun037)  |  [🔗](./code-splitting/jonghopark95)  |  [🔗](./code-splitting/Seogeurim)  |  [🔗](./code-splitting/peanut-lover)  |
+| Context          |     [🔗](./context/jiyong1)      |     [🔗](./context/chaeeun037)      |     [🔗](./context/jonghopark95)      |     [🔗](./context/Seogeurim)      |     [🔗](./context/peanut-lover)      |
+| Error Boundaries | [🔗](./error-boundaries/jiyong1) | [🔗](./error-boundaries/chaeeun037) | [🔗](./error-boundaries/jonghopark95) | [🔗](./error-boundaries/Seogeurim) | [🔗](./error-boundaries/peanut-lover) |
+| Forwarding Refs  | [🔗](./forwarding-refs/jiyong1)  | [🔗](./forwarding-refs/chaeeun037)  | [🔗](./forwarding-refs/jonghopark95)  | [🔗](./forwarding-refs/Seogeurim)  | [🔗](./forwarding-refs/peanut-lover)  |
+| Fragments        |    [🔗](./fragments/jiyong1)     |    [🔗](./fragments/chaeeun037)     |    [🔗](./fragments/jonghopark95)     |    [🔗](./fragments/Seogeurim)     |    [🔗](./fragments/peanut-lover)     |
