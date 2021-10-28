@@ -9,10 +9,11 @@
 
 ## 💡 스터디 기록
 
-| 주제             |               지용               |                채은                 |                 종호                  |                그림                |                 지호                  |
-| :--------------- | :------------------------------: | :---------------------------------: | :-----------------------------------: | :--------------------------------: | :-----------------------------------: |
-| Code-Splitting   |  [🔗](./code-splitting/jiyong1)  |  [🔗](./code-splitting/chaeeun037)  |  [🔗](./code-splitting/jonghopark95)  |  [🔗](./code-splitting/Seogeurim)  |  [🔗](./code-splitting/peanut-lover)  |
-| Context          |     [🔗](./context/jiyong1)      |     [🔗](./context/chaeeun037)      |     [🔗](./context/jonghopark95)      |     [🔗](./context/Seogeurim)      |     [🔗](./context/peanut-lover)      |
-| Error Boundaries | [🔗](./error-boundaries/jiyong1) | [🔗](./error-boundaries/chaeeun037) | [🔗](./error-boundaries/jonghopark95) | [🔗](./error-boundaries/Seogeurim) | [🔗](./error-boundaries/peanut-lover) |
-| Forwarding Refs  | [🔗](./forwarding-refs/jiyong1)  | [🔗](./forwarding-refs/chaeeun037)  | [🔗](./forwarding-refs/jonghopark95)  | [🔗](./forwarding-refs/Seogeurim)  | [🔗](./forwarding-refs/peanut-lover)  |
-| Fragments        |    [🔗](./fragments/jiyong1)     |    [🔗](./fragments/chaeeun037)     |    [🔗](./fragments/jonghopark95)     |    [🔗](./fragments/Seogeurim)     |    [🔗](./fragments/peanut-lover)     |
+| 주제                    |                  지용                   |                    채은                    |                     종호                     |                   그림                    |                     지호                     |
+| :---------------------- | :-------------------------------------: | :----------------------------------------: | :------------------------------------------: | :---------------------------------------: | :------------------------------------------: |
+| Code-Splitting          |     [🔗](./code-splitting/jiyong1)      |     [🔗](./code-splitting/chaeeun037)      |     [🔗](./code-splitting/jonghopark95)      |     [🔗](./code-splitting/Seogeurim)      |     [🔗](./code-splitting/peanut-lover)      |
+| Context                 |         [🔗](./context/jiyong1)         |         [🔗](./context/chaeeun037)         |         [🔗](./context/jonghopark95)         |         [🔗](./context/Seogeurim)         |         [🔗](./context/peanut-lover)         |
+| Error Boundaries        |    [🔗](./error-boundaries/jiyong1)     |    [🔗](./error-boundaries/chaeeun037)     |    [🔗](./error-boundaries/jonghopark95)     |    [🔗](./error-boundaries/Seogeurim)     |    [🔗](./error-boundaries/peanut-lover)     |
+| Forwarding Refs         |     [🔗](./forwarding-refs/jiyong1)     |     [🔗](./forwarding-refs/chaeeun037)     |     [🔗](./forwarding-refs/jonghopark95)     |     [🔗](./forwarding-refs/Seogeurim)     |     [🔗](./forwarding-refs/peanut-lover)     |
+| Fragments               |        [🔗](./fragments/jiyong1)        |        [🔗](./fragments/chaeeun037)        |        [🔗](./fragments/jonghopark95)        |        [🔗](./fragments/Seogeurim)        |        [🔗](./fragments/peanut-lover)        |
+| Higher-Order Components | [🔗](./higher-order-components/jiyong1) | [🔗](./higher-order-components/chaeeun037) | [🔗](./higher-order-components/jonghopark95) | [🔗](./higher-order-components/Seogeurim) | [🔗](./higher-order-components/peanut-lover) |
