@@ -1,12 +1,8 @@
-# 고차 컴포넌트 정리
+# 고차 컴포넌트 정리 with Typescript
 
 고차 컴포넌트와 컨테이너 컴포넌트라 불리는 패턴이 유사하다고 느낄 수 있습니다. 컨테이너 컴포넌트는 high-level과 low-level 관심사를 분리하는 전략 중 하나입니다. 컨테이너는 구독 및 state 같은 것을 관리하고 UI 렌더링 같은 것을 처리하는 컴포넌트에 props를 전달합니다. 고차 컴포넌트는 컨테이너를 그 구현체 중 일부에 사용하고 있습니다. 고차 컴포넌트는 매개변수화된 컨테이너 컴포넌트 정의로 생각할 수 있습니다.
 
-##
-
-고 수준의 관심사와 low-level 관심사를 분리하는 전략 중 하나입니다.
-
-https://medium.com/@jrwebdev/react-higher-order-component-patterns-in-typescript-42278f7590fb
+> https://medium.com/@jrwebdev/react-higher-order-component-patterns-in-typescript-42278f7590fb
 
 고차 컴포넌트는 기본적인 두가지 패턴으로 분리될 수 있습니다.
 
@@ -270,3 +266,17 @@ const makeCounter = <P extends InjectedCounterProps>(
 	}
 }
 ```
+
+# Recap
+
+고차컴포넌트의 역할은 크게 두 가지 방식으로 나누어집니다.
+
+명확한 구분을 위해 명칭을 따로 붙이자면 Enhancer, Injector 두가지로 부를 수 있습니다.
+
+Enhancer 방식의 고차 컴포넌트는 `wrapped component`와 무관한 props를 받아서 HOC 내부에서 추가적인 기능을 부여해서 해당 컴포넌트를 기능적으로 강화해주는 역할을 합니다.
+
+그리고 Injector 같은 경우 `wrapped component` 의 특정 props를 외부에서 주입 받지 않고 HOC 내부에서 생성해서 주입시켜주고 HOC 외부에서는 해당 props를 인식하지않는 형태로 Component를 만들어 주는 방식입니다.
+
+# 추가
+
+쉬운 디버깅을 위해서 HOC에서 감싸주는 컴포넌트에 `Display Name`을 지정해주는 것이 좋습니다.
