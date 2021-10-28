@@ -260,3 +260,10 @@ function getDisplayName(WrappedComponent) {
   return WrappedComponent.displayName || WrappedComponent.name || 'Component';
 }
 ```
+
+#### 211028 스터디 정리
+
+고차 컴포넌트 용도
+
+- Enhancer : 새로운 props를 통해 기능을 추가하고 싶을 때 (외부에서 property 받음)
+- Injector : 필요한 기능을 먼저 구현해놨다가 사용하고 싶을 때 (재정의처럼)
