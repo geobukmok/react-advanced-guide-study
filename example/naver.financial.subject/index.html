@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container span {
+        display: inline-block;
+        padding: 8px 12px;
+        border: 1px solid #ccc;
+        margin: 0 4px;
+        border-radius: 4px;
+      }
+
+      .container span.current-page {
+        background-color: #333;
+        color: #fff;
+      }
+
+      .container span.prev-page::before {
+        content: "◀️";
+      }
+      .container span.next-page::before {
+        content: "▶️";
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container"></div>
+    </main>
+    <script type="module">
+      import Pagination from "./src/Pagination.js";
+
+      // 스크립트 테스트를 위한 영역
+      // 작업 중 테스트를 위한 코드는 이곳에 작성하세요.
+      // Sample Codes
+      const pagination = new Pagination({
+        currentPage: 10,
+        totalItemCount: 1000,
+        pagePerItemCount: 10,
+      });
+      const html = pagination.render();
+      document.querySelector(".container").innerHTML = html;
+    </script>
+  </body>
+</html>
