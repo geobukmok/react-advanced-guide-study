@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      .container span {
+        display: inline-block;
+        padding: 8px 12px;
+        border: 1px solid #ccc;
+        margin: 0 4px;
+        border-radius: 4px;
+      }
+
+      .container span.current-page {
+        background-color: #333;
+        color: #fff;
+      }
+
+      .container span.prev-page::before {
+        content: '◀️'
+      }
+      .container span.next-page::before {
+        content: '▶️'
+      }
+    </style>
+    <title>네이버 파이낸셜 1차 테스트</title>
+  </head>
+  <body>
+    <main>
+      <h1>Pagination 렌더링 결과</h1>
+      <div class="container"></div>
+    </main>
+    <script type="module">
+      import Pagination from './src/Pagination.js'
+
+
+      // 스크립트 테스트를 위한 영역
+      // 작업 중 테스트를 위한 코드는 이곳에 작성하세요.
+      // Sample Codes
+      const pagination = new Pagination({
+        currentPage: 17,
+        totalItemCount: 4753,
+      })
+
+      const html = pagination.render()
+      
+      document.querySelector('.container').innerHTML = html;
+
+      // setState 테스팅
+      // document.querySelector('.container').querySelector('.next-page')?.addEventListener("click", () => {
+      //   pagination.setState({
+      //     currentPage: 18,
+      // })
+      //   const html2 = pagination.render();
+      //   document.querySelector('.container').innerHTML = html2;
+      // })      
+    </script>
+  </body>
+</html>
