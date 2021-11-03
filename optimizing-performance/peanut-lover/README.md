@@ -162,6 +162,58 @@ Intersaction Observer와 같은 기술도 있으니 충분히 그럴 듯해보�
 
 위 3가지 정도로 정리할 수 있을 듯합니다.
 
-# 데이터를 Mutating 하지않는 것의 힘.
+# 데이터를 Mutating 하지 않아야한다.?
 
-(정리중...)
+reconcilation 문제를 피하기 위한 가장 간단한 방법은 우리가 `state`나 `props`로 사용하고 있는 값의 수정을 피하는 것입니다.
+
+리액트에 익숙한 분들이면 아시겠지만 값의 변화를 비교하는 방식은 **얕은 비교** 입니다.
+
+그래서 복잡한 객체타입의 상태를 가지고 있다면 변화된 부분만 교체하는 것이 하위 컴포넌트들의 리렌더링을 최소화하는 방법이 될 것입니다.
+
+```js
+handleClick() {
+	this.setState(state => ({
+    words: state.words.concat(['markler'])
+  }));
+}
+```
+
+예를들어 위와같이 상태를 변경할 때 기존 값들에 `markler`이라는 단어를 추가만 해서 새로운 배열을 돌려주는 `concat` 함수를 이용할 수 있습니다.
+
+보다 편하게 사용하기 위해서 ES6는 배열을 보다 쉽게 생성하기 위해 `spread` 문법을 제공합니다.
+
+```js
+handleClick() {
+	this.setState(state => ({
+    words: [...state.words, 'marklar']
+  }))
+}
+```
+
+### 지양해야할 방식 (data를 직접 mutate하는 방식)
+
+흔히 함수형 프로그래밍을 하지않는 언어들에서 데이터를 직접 수정하는 방식을 간혹 많이 사용합니다. 하지만 리액트에서는 그렇게하면 가독성 저하나 불필요한 리렌더링을 발생시킬수있습니다. 아래처럼. 순수하지않는 함수를 작성해서는 안됩니다.
+
+```js
+function updateColorMap(colormap) {
+  colormap.right = "blue";
+}
+```
+
+기존 객체를 수정없이 작업하기 위해서 `Object.assign`를 사용하면 수정되는 부분만 수정 혹은 추가된 새로운 객체를 생성하게 됩니다.=
+
+```js
+function updateColorMap(colormap) {
+  return Object.assign({}, colormap, { right: "blue" });
+}
+```
+
+`updateColorMap` 함수는 기존의 객체를 수정하기보다는 새로운 객체를 생성해냅니다. 배열의 spread 연산자와 같은 맥락으로 `Object spread`문도은 수정없이 객체들을 변경하기 쉽게 해줍니다.
+
+```js
+function updateColorMap(colorMap) {
+  return { ...colormap, right: "blue" };
+}
+```
+
+위 기능은 ES2018에 추가된 기능입니다. 문법을 사용하려면 바벨의 도움이 필요합니다.(CRA를 사용하면 기본적으로 사용가능합니다.)
