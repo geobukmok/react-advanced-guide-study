@@ -30,8 +30,5 @@
 | Static Type Checking             |                                         |  [🔗](./static-type-checking/chaeeun037)   |       [🔗](./static-type-checking/jonghopark95)       |       [🔗](./static-type-checking/Seogeurim)       |                                                  |
 | Strict Mode                      |                                         |       [🔗](./strict-mode/chaeeun037)       |           [🔗](./strict-mode/jonghopark95)            |           [🔗](./strict-mode/Seogeurim)            |                                                  |
 | Typechecking With PropTypes      |                                         |                                            |   [🔗](./typechecking-with-proptypes/jonghopark95)    |                                                    | [🔗](./typechecking-with-proptypes/peanut-lover) |
-
-| Uncontrolled Components
-| [🔗](./uncontrolled-components/jiyong1) | | [🔗](./uncontrolled-components/jonghopark95) | [🔗](./uncontrolled-components/Seogeurim) | |
-| Web Components
-| | | [🔗](./web-components/jonghopark95) | | |
+| Uncontrolled Components | [🔗](./uncontrolled-components/jiyong1) | | [🔗](./uncontrolled-components/jonghopark95) | [🔗](./uncontrolled-components/Seogeurim) | |
+| Web Components | | | [🔗](./web-components/jonghopark95) | | |
